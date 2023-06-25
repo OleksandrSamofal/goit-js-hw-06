@@ -10,12 +10,10 @@ function onLoginButtonClick(event) {
 
     if (email.value === "" || password.value === "") {
         return alert("Усі поля повинні бути заповнені!");
-    } else {
-        const userDetails = {
-            email: email.value,
-            password: password.value,
-        };
-        console.log(userDetails);
-        formRef.reset();
-    };
+    } 
+    
+    const userDetails = { email: email.value, Password: password.value };
+
+  console.log(userDetails);
+  formRef.reset();
 };
